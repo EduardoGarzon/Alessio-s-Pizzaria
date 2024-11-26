@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --dark-color: #232323;
+    --light-color: #fff;
+    --orange-color: #e09a29;
+    --gray-color: #c7cbd1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* BUTTON */
+input[type="button"] {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border-style: none;
+    background-color: var(--orange-color);
+    color: var(--dark-color);
+    font-weight: 600;
+    transition: .3s;
+}
+
+input[type="button"]:hover {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border-style: none;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-weight: 600;
+    scale: 1.1;
+    cursor: pointer;
+}
+    
+/* HEADER */
+header {
+    width: 100%;
+    background-color: var(--dark-color);
+    padding: 1.5rem;
+    text-align: center;
+    z-index: 1000;
+    position: fixed;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--light-color);
+    margin-left: 3rem;
+}
+
+header a:hover {
+    text-shadow: 0 0 0.5rem var(--light-color);
+}
+
+/* SECTION 1 */
+.greetings-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("./img/pizza3.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    text-align: center;
+    color: var(--light-color);
+}
+
+.div-greetings-section {
+    position: relative;
+    top: 15rem;
+}
+
+.div-greetings-section > h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.div-greetings-section > p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    text-shadow: 0 3px 5px #232323;
+}
+
+/* SECTION 2 */
+.cardapio-section {
+    width: 100%;
+}
+
+.cardapio-section > h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: xx-large;
+}   
+
+.cardapio-section ul {
+    text-align: center;
+}
+
+.cardapio-section li {
+    max-width: 400px;
+    display: inline-block;  
+    margin: 2rem 2rem;
+    background-color: var(--gray-color);
+    text-align: left;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.cardapio-section h3, p {
+    padding: 1rem 3rem;
+}
+
+.cardapio-section p {
+    font-size: small;
+}
+
+.cardapio-section img {
+    max-width: 400px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/*  SECTION 3 */
+.about-section {
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--dark-color)), url(./img/pizza1.jpg);
+    background-position: center;
+    padding: 6rem;
+    color: var(--light-color);
+}
+
+.about-section h1 {
+    font-size: xx-large;
+}
+
+/* SECTION 4 */
+.contact-section {
+    margin-top: 3rem;
+}
+
+.div1-contact-section {
+    text-align: center;
+}
+
+.contact-section ul {
+    text-align: center;
+}
+
+.contact-section li {
+    text-align: left;
+    display: inline-block;
+    margin: 2rem 2rem;
+}
+
+.div-button-contact-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.div-button-contact-section input:hover {
+    background-color: var(--orange-color);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 3rem;
+    background-color: var(--dark-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: var(--orange-color);
+}
